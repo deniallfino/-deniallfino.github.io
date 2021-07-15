@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+  color : white
+}
+body{
+    height: 100%;
+}
+header{
+    width: 100%;
+    background-color: #E56262;
+    height: 6%;
+}
+header nav{
+    top:-30%;
+}
+header nav img{
+    margin:-15px 5px 0 5px;
+}
+header nav #info{
+    margin: -17px -10px 0 0 ; 
+}
+header nav div{
+    margin-left:-25px  ; 
+}
+main{
+    background-color: #FFB2B2;
+    position: absolute;
+    width: 100%;
+    height: 94%;
+}
+.nama{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.nama img{
+    position: absolute;
+    margin: 30px 0 0 -10em;
+    width: 385px;
+    max-width: 100%;
+}
+.nama h1{
+    margin-top:30px;
+}
+.nama p{
+    margin:-20px 0 0 -13em;
+}
+.nama p span{
+    color: #FF00E5;
+}
+.sibar{
+    width: 50%;
+    float: left;
+    height: 94%;
+}
+.join{  
+    position: absolute;
+    margin: 11em  0 0 0; 
+    visibility: visible;
+}
+.join p{
+    margin: 1em 0 2em  0;
+}
+.join a{
+    font-size: 26px;
+}
+.join p{
+    font-size: 19px;
+}
+.join h2{
+    font-size: 42px;
+}
+.join a button{
+   
+    margin: 0 0 0 4em;
+    border:none;
+    padding: 10px 35px;
+    background-color: #fc3434;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.join a .btn2{
+    margin: 0 0 0 3em;
+}
+.join a button:hover{
+    background-color: #a70606;
+}
+.poly1{
+    position: absolute;
+    width: 300px;
+    margin: 13.2em 0 0 5em;
+    animation: myfirst 0.7s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%    { left:0px; top:0px ;bottom:0px ; right: 0px;}
+  100% { left:30px; top:30px ;bottom:30px ; right: 30px;}
+}
+.poly2{
+    position: absolute;
+    width: 500px;
+    margin: 5em 0 0 35em;
+    animation: my 0.7s infinite alternate;
+    -webkit-animation: my 0.7s infinite alternate;
+}
+
+.daftar{
+    visibility: hidden;
+    position: absolute;
+    padding: 1em 1em;
+    background-color: rgb(247, 118, 118, 0.5);
+    top:5%;
+    left:37%;
+    font-size: 24px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px 50px 20px 50px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 10px rgb(236, 63, 63) ;
+}
+.daftar .reg {
+    font-size: 33px;
+    margin-top:0.5em;
+}
+.daftar .tutup{
+    font-size: 36px;
+    position: absolute;
+    margin: -2.9em 0 0 8em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.daftar a button,input{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:none;
+}
+.daftar .gmail button{
+    padding: 8px 50px;
+    background-color: #FD9244;
+}
+.daftar .gmail button:hover{
+    background-color: #c26a2c;
+}
+.daftar input{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.daftar .btn button{
+    width: 100px;
+    max-width: 100%;
+    font-size: 20px;
+    background-color:#fc3434 ;
+    padding: 8px 20px;
+    margin: 10px 4px 0px 20px;
+}
+.daftar .btn button:hover{
+    background-color: #a70606;
+}
+.masuk1{
+    visibility: hidden;
+    position: absolute;
+    top:10%;
+    left: 55%;
+}
+.masuk1 .titl {
+    font-size: 60px ;
+}
+.masuk1 p span{
+    color: #FF00E5;
+}
+.masuk1 input{
+    font-size: 26px;
+    width: 450px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+}
+.masuk1 a button{
+    font-size: 26px;
+    width: 450px;
+    height: 50px;
+    margin:5px 0 0 -15px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #FD9244;
+    cursor: pointer;
+}
+.masuk1 p a{
+    color:black;
+    text-decoration: none;
+}
+.masuk1 hr{
+    border: 0.5px solid rgb(49, 49, 49);
+    margin-right:1em;
+}
+@media only screen and (max-width: 800px){
+    .poly1, .poly2, .sibar .join h2, p{
+        display: none;
+    } 
+    body{
+      
+        height: 100%;
+        width: 600px;
+        max-width: 100%;
+    }
+   .nama{
+       margin: -20px 0 0 0;
+       position: absolute;
+       width: 100%;
+       float:left;
+   }
+   .nama img{
+    margin: 7px 0 0 -9em;
+       width: 340px;
+       max-width: 100%;
+       position: absolute;
+       visibility: visible;
+       
+   }
+   .sibar{
+       position: absolute;
+       width: 100%;
+       float:left;
+   }
+   .sibar .join a button{
+    position: absolute;
+    margin: 11.8em 0 0 3em;
+   }
+   .sibar .join a .btn2{
+    position: absolute;
+    margin: 11.8em  0 0 11em;
+}
+    header{
+    max-width: 100%;
+    width:100%;
+    }
+    header nav #info{
+        padding: 15px 0 0 0;
+       }
+    header nav div a img{
+        padding: 15px 0 0 0;
+    }
+    .daftar{
+        position: relative;
+        width: 90%;
+        max-width: 100%;
+        float: left;
+        margin: 1em 0 0 -6.5em;
+        padding-bottom: -40px;
+}
+    .daftar input{
+         position: relative;
+         width: 100%;
+}
+    .daftar .gmail button{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+
+}
+    .daftar  .tutup{
+        position: relative;
+        margin: -20px 0 0 10em;
+        color:black; 
+}
+    .daftar .btn{
+        position: relative;
+        display: inline;
+        margin: 0 0 0 2.5em;
+}
+    .masuk1{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        float: left;
+        margin: 5em 0 0 -33.4em;
+        padding-left: 20px;
+        border-radius: 20px 50px 20px 50px;
+        -webkit-border-radius: 20px 50px 20px 50px;
+        -moz-border-radius: 20px 50px 20px 50px;
+        -ms-border-radius: 20px 50px 20px 50px;
+        -o-border-radius: 20px 50px 20px 50px;
+        text-align: center;
+        padding-top:20px;
+        max-width: 100%;
+    }
+    .masuk1 .tutup{
+    font-size: 36px;
+    position: relative;
+    margin: 0 0 0 12em;
+    cursor: pointer;
+    }
+    .masuk1 hr{
+        display: none;
+    }
+    .masuk1 input{
+        margin-right:20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}

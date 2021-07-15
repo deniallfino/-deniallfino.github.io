@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Kokumi</title>
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </head>
+     
+    <body>
+      <header>
+      <nav class="navbar justify-content-between" >
+        <div class="navbar">
+          <p>Kontak</p>
+          <a href="gmail.com"><img src="gambar/email.png" alt="Email"></a><p> Kokumi@gmail.com</p>
+          <a href="instagram.com"><img src="gambar/instagram.png" alt="instagram"></a><p> Kokumi@gmail.com</p>
+        </div>
+          <a class="navbar" id="info"><div> Info</div></a>
+      </nav>
+    </header>
+      <main>
+        <img class="poly1" src="gambar/Polygon 1.png" alt="">
+        <img class="poly2" src="gambar/Polygon 2.png" alt="">
+        <div class="nama">
+        <h1>Welcome To Kokumi</h1>
+        <p>Creat Desain  with <span>U</span>s</p>
+        <img id="gambar" src="gambar/Logo.png" alt="Kokumi" >
+      </div>
+     <div class="sibar">
+       <div>
+        <div class="join" id="join">
+          <h2>Kokumi</h2>
+          <p>Kokumi is one the bigest platfrom to grow up Your skill. come on what are you waiting for!!!!!!</p>
+          <article>
+            <a id="btn"><button onClick="joinus()">JoinUs</button></a>
+            <a id="btn"><button class="btn2" onClick="masuk()">Login</button></a>
+          </article>
+          </div>
+        <div id="daftar" class="daftar">
+          <p class="reg">Register</p> 
+          <a class="tutup" onClick="joinus()">X</a>
+           <a href="www.gmail.com" class="gmail"><button>Register With Gmail </button></a>
+           <hr/>
+           <input type="text" placeholder="Email atau Nomor Hp"><br/>
+           <input type="text" placeholder="Frist Name"><br/>
+           <input type="text" placeholder="Last Name"><br/>
+           <input type="password" placeholder="Password"><br/> 
+            <a id="btn" class="btn"><button onClick="joinus()">JoinUs</button></a>
+            <a id="btn" class="btn"><button onClick="joinus()">Back</button></a>
+         </div>
+        <div id="login"class="masuk1">
+          <a class="tutup" onClick="masuk()">X</a>
+          <p class="titl">Login <span>T</span>o Kokumi</p>
+          <input type="text" placeholder="Email atau Nomor Hp"><br/>
+           <input type="password" placeholder="Password"><br/> 
+            <a id="btn" class="btn"><button style="background-color:#FD4444" onClick="masuk()">Login</button></a></br>
+        <p><a href="">Lupa Kata Sandi ?</a></p>
+            <hr>
+            <a id="btn" class="btn"><button onClick="joinus1()">Creat Account</button></a></br>
+            <a id="btn" class="btn"><button onClick="masuk()">Login with Gmail</button></a>
+        </div>
+        </div></div>
+
+        </main>
+        <script>
+function joinus() {
+  var x = document.getElementById('daftar');
+  var y = document.getElementById('join');
+  if (x.style.visibility === 'visible'&& y.style.visibility === 'hidden' ) {
+    x.style.visibility = 'hidden';
+    y.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'visible';
+    y.style.visibility = 'hidden';
+  }
+}
+function joinus1() {
+  var x = document.getElementById('daftar');
+  var y = document.getElementById('login');
+  if (x.style.visibility === 'visible'&& y.style.visibility === 'hidden' ) {
+    x.style.visibility = 'hidden';
+    y.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'visible';
+    y.style.visibility = 'hidden';
+  }
+}
+function masuk() {
+  var x = document.getElementById('login');
+  var y = document.getElementById('join');
+  if (x.style.visibility === 'visible'&& y.style.visibility === 'hidden') {
+    x.style.visibility = 'hidden';
+    y.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'visible';
+    y.style.visibility = 'hidden';
+  }
+}
+ 
+        </script>
+    </body>
+</html>
